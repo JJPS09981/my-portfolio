@@ -10,7 +10,7 @@ https://jjps09981.github.io/my-portfolio/
 
 ## ⭐ 功能 Features
 
-### 🎨 個人品牌形象
+## 🎨 個人品牌形象
 
 - 專屬 Q 版恐龍 S Logo
 - 主視覺打造一致風格
