@@ -54,20 +54,19 @@ https://jjps09981.github.io/my-portfolio/
 - GitHub Pages
 - gh-pages 套件自動部署
 
----
-
 ## 📄 專案結構（部分）
 
+```bash
 my-portfolio/
 │─ public/
-│ └─ avatar.jpg
+│   └─ avatar.jpg
 │
 │─ src/
-│ ├─ components/
-│ ├─ pages/
-│ ├─ index.css
-│ ├─ App.jsx
-│ └─ main.jsx
+│   ├─ components/
+│   ├─ pages/
+│   ├─ index.css
+│   ├─ App.jsx
+│   └─ main.jsx
 │
 │─ package.json
 │─ vite.config.js
