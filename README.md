@@ -10,27 +10,27 @@ https://jjps09981.github.io/my-portfolio/
 
 ## ⭐ 功能 Features
 
-## 🎨 個人品牌形象
+### 🎨 個人品牌形象
 
 - 專屬 Q 版恐龍 S Logo
 - 主視覺打造一致風格
 
-## 🧑‍💻 About Me 區塊
+### 🧑‍💻 About Me 區塊
 
 - 自我介紹
 - 技能（Skills）
 - 擅長工具與正在學習的技術
 
-## 🗂️ 作品展示 Projects
+### 🗂️ 作品展示 Projects
 
 - 以卡片形式清楚呈現作品
 - Demo 與 GitHub 連結一鍵前往
 
-## 📱 響應式設計
+### 📱 響應式設計
 
 - 針對桌機 / 平板 / 手機多裝置完整適配
 
-## ⚡ 技術與效能
+### ⚡ 技術與效能
 
 - Vite 快速開發環境
 - React Component-based 結構
