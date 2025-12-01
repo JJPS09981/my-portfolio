@@ -6,8 +6,6 @@
 🔗 **Live Demo**  
 https://jjps09981.github.io/my-portfolio/
 
----
-
 ## ⭐ 功能 Features
 
 ### 🎨 個人品牌形象
@@ -35,8 +33,6 @@ https://jjps09981.github.io/my-portfolio/
 - Vite 快速開發環境
 - React Component-based 結構
 - Tailwind CSS utility-first 風格快速開發
-
----
 
 ## 🛠️ 使用技術 Tech Stack
 
