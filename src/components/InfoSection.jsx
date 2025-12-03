@@ -6,10 +6,12 @@ import { useState } from "react";
 function InfoNav() {
   const [activeSection, setActiveSection] = useState(0);
 
-  const baseBtn = "cursor-pointer rounded-md px-3 py-1.5 border transition";
-  const btnStyle = "bg-[#4A7056] text-white border-[#4A7056]";
-  const btnHover =
-    "border-slate-300 hover:border-[#4A7056] hover:text-[#4A7056]";
+  const baseBtn = "cursor-pointer rounded-md px-3 py-1.5 border ";
+  const btnStyle = `bg-[#4A7056] text-white border-[#4A7056] 
+  dark:bg-[#3A5F48] dark:text-[#EAF1EC] dark:border-[#4A7056]`;
+
+  const btnHover = `hover:border-[#4A7056] hover:bg-white hover:text-[#4A7056]
+  dark:hover:bg-neutral-800 dark:hover:text-white dark:hover:border-[#3A5F48]`;
 
   return (
     <section className="mt-4">
@@ -27,18 +29,11 @@ function InfoNav() {
         >
           作品
         </button>
-        <button
-          onClick={() => setActiveSection(2)}
-          className={`${baseBtn} ${activeSection === 2 ? btnStyle : btnHover}`}
-        >
-          小功能
-        </button>
       </nav>
 
       <div className="w-full  ">
         {activeSection === 0 && <AboutMe />}
         {activeSection === 1 && <Projects />}
-        {activeSection === 2 && <Challenge />}
       </div>
     </section>
   );

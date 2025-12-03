@@ -1,25 +1,27 @@
 function Projects() {
   const projects = [
     {
-      title: "WorldWise (做基礎Router練習，後續會慢慢加強)",
-      description: "使用 React Router + Leaflet 打造的世界城市地圖筆記 App。",
-      tech: ["React", "React Router", "Leaflet"],
-      demo: "https://worldwise-sheng.netlify.app/",
-      github: "https://github.com/JJPS09981/worldwise",
-    },
-    {
-      title: "Forkify",
-      description: "食譜搜尋與收藏應用，支援 API 搜尋與自訂食譜。",
-      tech: ["JavaScript", "Parcel"],
-      demo: "https://forkify-sheng.netlify.app/",
+      title: "Forkify (純 JS DOM 練習)",
+      description:
+        "使用純 JavaScript 打造的食譜搜尋與收藏工具。透過 API 取得食譜資訊，並支援上傳自訂食譜、Local Storage 永久收藏與動態更新 UI。",
+      tech: ["JavaScript", "Parcel", "Local Storage"],
+      demo: "https://jjps09981.github.io/forkify-course-practice",
       github: "https://github.com/JJPS09981/forkify-course-practice/tree/main",
     },
     {
-      title: "BookList",
-      description: "可以新增、編輯、刪除書籍的 CRUD 練習專案。",
-      tech: ["React", "JSON Server", "Axios"],
-      demo: "#",
-      github: "#",
+      title: "TravelList (React State 練習)",
+      description:
+        "旅遊打包清單工具，支援新增、編輯、刪除、排序、勾選、進度條。",
+      tech: ["React", "CSS Grid", "Local Storage"],
+      demo: "https://jjps09981.github.io/travel-list/",
+      github: "https://github.com/JJPS09981/travel-list",
+    },
+    {
+      title: "WorldWise (React Router 基礎練習，後續會加強)",
+      description: "使用 React Router + Leaflet 打造的世界城市地圖筆記 App。",
+      tech: ["React", "React Router", "Leaflet", "JSON Server"],
+      demo: "https://worldwise-sheng.netlify.app/",
+      github: "https://github.com/JJPS09981/worldwise",
     },
   ];
 

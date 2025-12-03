@@ -22,7 +22,7 @@ function AboutMe() {
         </header>
 
         <div className="flex flex-col gap-4 md:flex-row md:items-start">
-          <div className="flex-shrink-0 flex justify-center md:justify-start">
+          <div className="shrink-0 flex justify-center md:justify-start">
             <div className="w-28 h-28 rounded-full   flex items-center justify-center overflow-hidden">
               <span className="text-3xl" aria-hidden="true">
                 <img src="avatar.jpg" alt="avatar" />
@@ -89,9 +89,11 @@ function AboutMe() {
         <IntroduceSection title={"📌 自我介紹"}>
           {
             <p className="text-sm leading-relaxed text-slate-700">
-              我是一位投入前端領域的開發者，目前專注在 React與前端工程化。
-              喜歡把想法做成可以實際操作的介面，並透過不斷練習與優化，讓程式碼與畫面都變得更乾淨、
-              更好維護。現在正在持續的學習，並打造自己的作品集，希望未來能以前端工程師的身分參與真正的產品開發。
+              在疫情期間擔任三年的設備工程師，但大學專題接觸到的網頁開發經驗，讓我對前端產生長期興趣。轉職後，我系統性修習
+              Jonas Schmedtmann 的前端與 React
+              全系列課程，透過課程中的專案與實戰練習，建立了扎實的 JavaScript 與
+              React 基礎。 現在主要專注於 React
+              與前端工程化，持續以實作累積作品，並希望未來能以前端工程師的角色參與完整的產品開發流程。
             </p>
           }
         </IntroduceSection>
@@ -103,7 +105,6 @@ function AboutMe() {
               <li>
                 喜歡聽團、露營與戶外運動，室內活動喜歡看電影或是玩線上遊戲
               </li>
-              <li></li>
             </ul>
           }
         </IntroduceSection>
