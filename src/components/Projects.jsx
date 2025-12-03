@@ -36,7 +36,7 @@ function Projects() {
             <div className="flex items-center justify-between gap-2">
               <h3 className="text-sm font-semibold">{project.title}</h3>
             </div>
-            <p className="text-xs text-slate-600 leading-relaxed">
+            <p className="text-xs text-slate-600 leading-relaxed dark:text-neutral-500">
               {project.description}
             </p>
             <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-500">
