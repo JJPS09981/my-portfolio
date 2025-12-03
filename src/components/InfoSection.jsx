@@ -4,7 +4,15 @@ import Projects from "./Projects";
 import { useState } from "react";
 
 function InfoNav() {
-  const [activeSection, setActiveSection] = useState(0);
+  const [activeSection, setActiveSection] = useState(() => {
+    const hash = window.location.hash.replace("#", "");
+    return hash === "projects" ? 1 : 0;
+  });
+
+  function switchTab(tab) {
+    window.location.hash = tab;
+    setActiveSection(tab === "about" ? 0 : 1);
+  }
 
   const baseBtn = "cursor-pointer rounded-md px-3 py-1.5 border ";
   const btnStyle = `bg-[#4A7056] text-white border-[#4A7056] 
@@ -17,14 +25,14 @@ function InfoNav() {
     <section className="mt-4">
       <nav className="flex gap-3 mb-4">
         <button
-          onClick={() => setActiveSection(0)}
+          onClick={() => switchTab("about")}
           className={`${baseBtn} ${activeSection === 0 ? btnStyle : btnHover}`}
         >
           關於我
         </button>
 
         <button
-          onClick={() => setActiveSection(1)}
+          onClick={() => switchTab("projects")}
           className={`${baseBtn} ${activeSection === 1 ? btnStyle : btnHover}`}
         >
           作品

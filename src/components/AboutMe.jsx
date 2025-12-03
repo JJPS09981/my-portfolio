@@ -9,6 +9,8 @@ const skills = [
 ];
 const enhanceSkills = ["Typescript", "Next.js", "Node + Express"];
 
+const skillStyle = "px-2.5 py-1 text-xs rounded-full border ";
+
 function IntroduceSection({ title, children }) {
   return (
     <section className="pt-4 border-t border-slate-200 space-y-2 ">
@@ -33,7 +35,7 @@ function AboutMe() {
 
         <div className="flex flex-col gap-4 md:flex-row md:items-start">
           <div className="shrink-0 flex justify-center md:justify-start">
-            <div className="w-28 h-28 rounded-full   flex items-center justify-center overflow-hidden">
+            <div className="w-28 h-28 rounded-full dark:border dark:border-white/50 flex items-center justify-center overflow-hidden">
               <span className="text-3xl" aria-hidden="true">
                 <img src="avatar.jpg" alt="avatar" />
               </span>
@@ -61,7 +63,7 @@ function AboutMe() {
               {skills.map((skill) => (
                 <span
                   key={skill}
-                  className="px-2.5 py-1 text-xs rounded-full bg-slate-100 text-slate-800 border border-slate-200 "
+                  className={`${skillStyle} bg-[#4A7056]/20 dark:text-[#EAF1EC] border-[#4A7056]/40`}
                 >
                   {skill}
                 </span>
@@ -76,7 +78,7 @@ function AboutMe() {
               {enhanceSkills.map((skill) => (
                 <span
                   key={skill}
-                  className="px-2.5 py-1 text-xs rounded-full bg-slate-100 text-slate-800 border border-slate-200"
+                  className={`${skillStyle} bg-neutral-700/50 dark:text-neutral-300 border-neutral-600`}
                 >
                   {skill}
                 </span>
