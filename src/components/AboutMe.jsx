@@ -1,20 +1,29 @@
 const skills = [
   "HTML",
   "CSS",
-  "JavaScript",
+  "JavaScript (ES6+)",
   "React",
-  "SASS / SCSS",
   "Tailwind CSS",
+  "SASS / SCSS",
   "Git",
+  "npm / npx",
 ];
-const enhanceSkills = ["Typescript", "Next.js", "Node + Express"];
+
+const learningSkills = [
+  "Typescript",
+  "Next.js",
+  "React Query",
+  "Zustand 或 Redux Toolkit",
+  "Node + Express",
+  "MongoDB",
+];
 
 const skillStyle = "px-2.5 py-1 text-xs rounded-full border ";
 
 function IntroduceSection({ title, children }) {
   return (
     <section className="pt-4 border-t border-slate-200 space-y-2 ">
-      <h3 className="text-sm font-semibold text-slate-900 flex items-center gap-2 dark:text-neutral-200">
+      <h3 className="text-base font-semibold text-slate-900 flex items-center gap-2 dark:text-neutral-200">
         {title}
       </h3>
       {children}
@@ -57,13 +66,56 @@ function AboutMe() {
           </div>
         </div>
 
+        <IntroduceSection title={"📌 自我介紹"}>
+          {
+            <article className="space-y-6 text-sm leading-relaxed text-slate-700 dark:text-neutral-200">
+              <section>
+                <p>
+                  我是一名前 <strong>設備工程師轉職的前端開發者</strong>
+                  ，擅長使用
+                  <strong> React + Vite </strong>
+                  打造快速、乾淨、好維護的網頁介面。 在開發過程中，我很重視
+                  <em>UI/UX 細節、狀態管理邏輯、元件化設計、前端工程化流程</em>
+                  ，喜歡試著將複雜功能拆解成清楚、可重複使用的程式結構。
+                </p>
+              </section>
+
+              <section>
+                <h3 className="font-semibold mb-2">🔧 目前專注的技術</h3>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>⚛️ React 生態系（Hooks、組件化、Props/State、Router）</li>
+                  <li>🎨 Tailwind CSS / RWD 響應式設計</li>
+                  <li>🔌 API 串接、非同步流程、錯誤處理</li>
+                  <li>
+                    🛠️ 前端工程化（Vite、Parcel、ESLint、npm（套件管理、npm
+                    scripts））
+                  </li>
+                </ul>
+              </section>
+
+              <section>
+                <h3 className="font-semibold mb-2">🧩 工程背景帶來的優勢</h3>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>系統化拆解問題的能力</li>
+                  <li>危機處理與跨部門溝通</li>
+                  <li>對流程品質的堅持與紀律</li>
+                </ul>
+                <p className="mt-2">
+                  這些能力讓我在前端開發時，更能以<strong>工程思維</strong>
+                  規劃架構、分析需求與優化細節。
+                </p>
+              </section>
+            </article>
+          }
+        </IntroduceSection>
+
         <IntroduceSection title={"🌟 技能 Skills"}>
           {
             <div className="flex flex-wrap gap-2 ">
               {skills.map((skill) => (
                 <span
                   key={skill}
-                  className={`${skillStyle} bg-[#4A7056]/20 dark:text-[#EAF1EC] border-[#4A7056]/40`}
+                  className={`${skillStyle} bg-[#4A7056]/30  border-[#4A7056] dark:text-[#EAF1EC] dark:bg-[#4A7056]/60`}
                 >
                   {skill}
                 </span>
@@ -72,13 +124,13 @@ function AboutMe() {
           }
         </IntroduceSection>
 
-        <IntroduceSection title={"📖 待補技能 Skills"}>
+        <IntroduceSection title={"📖 學習中技能 Learning"}>
           {
             <div className="flex flex-wrap gap-2">
-              {enhanceSkills.map((skill) => (
+              {learningSkills.map((skill) => (
                 <span
                   key={skill}
-                  className={`${skillStyle} bg-neutral-700/50 dark:text-neutral-300 border-neutral-600`}
+                  className={`${skillStyle} bg-neutral-500/50  border-neutral-600 dark:text-neutral-300 dark:border-neutral-200`}
                 >
                   {skill}
                 </span>
@@ -98,22 +150,12 @@ function AboutMe() {
           }
         </IntroduceSection>
 
-        <IntroduceSection title={"📌 自我介紹"}>
-          {
-            <p className="text-sm leading-relaxed text-slate-700 dark:text-neutral-200">
-              在疫情期間擔任三年的設備工程師，但大學專題接觸到的網頁開發經驗，讓我對前端產生長期興趣。轉職後，我系統性修習
-              Jonas Schmedtmann 的前端與 React
-              全系列課程，透過課程中的專案與實戰練習，建立了扎實的 JavaScript 與
-              React 基礎。 現在主要專注於 React
-              與前端工程化，持續以實作累積作品，並希望未來能以前端工程師的角色參與完整的產品開發流程。
-            </p>
-          }
-        </IntroduceSection>
-
         <IntroduceSection title={"🎽 生活 / 興趣"}>
           {
             <ul className="list-disc list-inside text-sm text-slate-700 space-y-1 dark:text-neutral-200">
-              <li>長跑訓練中，目前正準備半馬比賽</li>
+              <li>
+                持續進行長跑訓練，目前正準備半馬，規律訓練讓我保持節奏與專注
+              </li>
               <li>
                 喜歡聽團、露營與戶外運動，室內活動喜歡看電影或是玩線上遊戲
               </li>
