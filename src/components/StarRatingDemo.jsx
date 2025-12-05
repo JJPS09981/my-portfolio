@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function StarRatingDemo({
   maxRating = 10,
   color = "#e6b800",
-  size = 40,
+  size = 36,
   className = "",
   defaultRating = 5,
 }) {

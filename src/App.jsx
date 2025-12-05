@@ -1,6 +1,7 @@
 import HomePage from "./page/HomePage";
 import { useEffect, useState } from "react";
 import { ToastContainer } from "react-toastify";
+import BackToTop from "./components/BackToTop";
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         closeOnClick
         theme={isDark ? "dark" : "light"}
       />
+      <BackToTop />
     </>
   );
 }
