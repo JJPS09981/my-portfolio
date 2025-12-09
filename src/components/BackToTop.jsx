@@ -25,7 +25,7 @@ function BackToTop() {
   return (
     <button
       onClick={handleScrollTop}
-      className={`fixed bottom-10 left-1/2 -translate-x-1/2 -ml-4
+      className={`fixed bottom-10 left-1/2 -translate-x-1/2 md:-ml-8
                   z-50 w-9 h-9 flex items-center justify-center
                   rounded-full border shadow-lg backdrop-blur 
                 bg-white/70 border-slate-300 text-slate-700 

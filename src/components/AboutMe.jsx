@@ -2,6 +2,7 @@ const skills = [
   "HTML",
   "CSS",
   "JavaScript (ES6+)",
+  "Typescript",
   "React",
   "Tailwind CSS",
   "SASS / SCSS",
@@ -10,7 +11,6 @@ const skills = [
 ];
 
 const learningSkills = [
-  "Typescript",
   "Next.js",
   "React Query",
   "Zustand 或 Redux Toolkit",
@@ -71,9 +71,8 @@ function AboutMe() {
             <article className="space-y-6 text-sm leading-relaxed text-slate-700 dark:text-neutral-200">
               <section>
                 <p>
-                  我是一名前 <strong>設備工程師轉職的前端開發者</strong>
-                  ，擅長使用
-                  <strong> React + Vite </strong>
+                  我是一名前<strong> 設備工程師轉職的前端開發者 </strong>
+                  ，擅長使用<strong> React + Vite </strong>
                   打造快速、乾淨、好維護的網頁介面。 在開發過程中，我很重視
                   <em>UI/UX 細節、狀態管理邏輯、元件化設計、前端工程化流程</em>
                   ，喜歡試著將複雜功能拆解成清楚、可重複使用的程式結構。
@@ -97,8 +96,9 @@ function AboutMe() {
                 <h3 className="font-semibold mb-2">🧩 工程背景帶來的優勢</h3>
                 <ul className="list-disc list-inside space-y-1">
                   <li>系統化拆解問題的能力</li>
-                  <li>危機處理與跨部門溝通</li>
+                  <li>跨部門溝通與危機處理</li>
                   <li>對流程品質的堅持與紀律</li>
+                  <li>與客戶維持良好的溝通</li>
                 </ul>
                 <p className="mt-2">
                   這些能力讓我在前端開發時，更能以<strong>工程思維</strong>

@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function StarRatingDemo({
   maxRating = 10,
   color = "#e6b800",
-  size = 36,
+  size = "clamp(30px, 5vw, 42px)",
   className = "",
   defaultRating = 5,
 }) {
@@ -30,7 +30,13 @@ export default function StarRatingDemo({
         ))}
       </div>
 
-      <p className="leading-none m-0 " style={{ fontSize: size / 1.5, color }}>
+      <p
+        className="leading-none m-0 "
+        style={{
+          fontSize: `calc(${size} * 0.7)`,
+          color,
+        }}
+      >
         {tempRating || rating || ""}
       </p>
     </div>

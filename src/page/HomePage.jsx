@@ -17,7 +17,11 @@ function AppLayout({ children }) {
     <div className="h-screen overflow-hidden text-slate-900">
       <div
         id="content-scroll"
-        className="mx-auto bg-white max-w-3xl px-4 py-12 space-y-16 dark:text-slate-100 dark:bg-neutral-800 h-full overflow-y-auto"
+        className="
+          mx-auto bg-white max-w-3xl px-4 py-12 space-y-16
+          dark:text-slate-100 dark:bg-neutral-800
+          h-full overflow-y-auto
+        "
         style={{ scrollbarGutter: "stable" }}
       >
         {children}
